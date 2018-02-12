@@ -14,11 +14,13 @@ const Popup = props => {
    confirm(`${getname} Are you sure you don't want to see ${props.singer}?`)
  }
   let formSubmission = () => {
+    debugger;
+    event.PreventDefault;
     alert(`${getname} your form was submitted`)
   }
    return(
   <div>
-    <div className="save button close" onClick={handleTryClosingAd}>
+    <div className="save button close" onMouseEnter={handleTryClosingAd}>
    X
   </div>
     <div>
@@ -27,7 +29,7 @@ const Popup = props => {
     </div>
 
     <div className="form-container">
-      <form>
+      <form onSubmit={formSubmission}>
       <div className="grid-container">
       <div className="grid-x grid-padding-x">
         <div className="large-12 cell">
@@ -36,8 +38,9 @@ const Popup = props => {
         {/* on clicking this do something
           see: https://medium.com/@everdimension/how-to-handle-forms-with-just-react-ac066c48bd4f*/}
           {/* y default, button elements are of the type "submit" which causes them to submit their enclosing form element (if any). Changing the type to "button" prevents that.
-           */}
-        <button className="button expanded" type='button' id='submit' value='' onClick={formSubmission}>CLAIM YOUR PRIZE</button>
+
+        <button className="button expanded" type='button' id='submit' value='' onClick={formSubmission}>CLAIM YOUR PRIZE</button>*/}
+        <input className="button expanded" type="submit" value="CLAIM YOUR PRIZE" />
         </div>
           </div>
         </div>
