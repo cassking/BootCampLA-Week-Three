@@ -1,0 +1,91 @@
+/* YOUR STYLING HERE */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Comic Sans MS';
+  background: $light-blue;
+  text-align: center;
+  color: $grey;
+}
+
+a {
+  color: #FF8C00;
+}
+
+#app {
+  width: 100%;
+}
+
+.faq-section {
+  text-align: left;
+}
+
+h1,
+h2 {
+  font-family: 'Comic Sans MS';
+}
+
+h2 {
+  margin-left: 30px;
+  vertical-align: top;
+  display: inline-block;
+}
+
+h1 {
+  color: $blue;
+}
+
+p {
+  font-size: 24px;
+}
+
+.sexy_line {
+  margin: 25px 0;
+  height: 1px;
+  background: black;
+  background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, black));
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.question {
+  width: 100%;
+}
+
+.answer {
+  display: none;
+}
+
+.answer.selected {
+  display: block;
+}
+
+.button {
+  vertical-align: top;
+  padding: 23px 40px;
+  display: inline-block;
+  font-size: 3em;
+  -webkit-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
+}
+
+.button.green {
+  background-color: $green;
+}
+
+ul {
+  list-style: none;
+}

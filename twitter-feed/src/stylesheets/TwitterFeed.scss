@@ -1,0 +1,101 @@
+/* YOUR STYLING HERE */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.0em;
+  font-family: 'Montserrat', sans-serif;
+  background: #B0E0E6;
+  text-align: center;
+}
+
+a {
+  color: #FF8C00;
+}
+#app {
+  margin: 30px auto 0;
+  width: 100%;
+}
+
+
+.title {
+  font-size: 4em;
+  font-weight: 700;
+  font-family: 'Vollkorn', serif;
+  margin-bottom: 0.8em;
+  color: #FFF;
+   text-shadow: -1px 0 #FF8C00, 0 1px #FF8C00, 1px 0 #FF8C00, 0 -1px #FF8C00;
+
+}
+.handle,
+.timestamp_ms,
+.retweet_count,
+.favorite_count,
+.favorited,
+.retweet,
+.retweeted,
+.ellipsis {
+  color: #999;
+  margin-right: 10%;
+  cursor:pointer;
+}
+.favorited,
+.retweet,{
+  margin-right: 0;
+}
+.handle:hover,
+.timestamp_ms:hover,
+.retweet_count:hover,
+.favorite_count:hover,
+.favorited:hover,
+.reteet:hover,
+.retweeted:hover,
+.ellipsis:hover {
+  opacity: 0.5;
+}
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+.tweetContainer {
+  background-color: #fff;
+  border: 2px solid #000;
+  width: 90%;
+  padding: 10px;
+  text-align:left;
+  margin-bottom: 5px;
+  box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+
+}
+.profile_image {
+  vertical-align:top;
+  display:inline-block;
+  width: 10%;
+  min-width: 75px;
+  padding: 2px;
+
+
+}
+.profile_body {
+  vertical-align:top;
+  display:inline-block;
+  width: 75%;
+  // border: 1px solid #eee;
+  padding: 0 10px;
+}
+.media {
+  display:inline-block;
+  text-align:right;
+  max-width: 100%;
+}
